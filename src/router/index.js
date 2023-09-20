@@ -20,6 +20,13 @@ const routes = [
     meta: { auth: true },
   },
   {
+    path: "/chat",
+    name: "chat",
+    // redirect: "/login",
+    component: () => import("../views/ChatPage.vue"),
+    meta: { auth: true },
+  },
+  {
     path: "/users",
     name: "users",
     component: () => import("../views/UsersPage.vue"),
